@@ -103,7 +103,7 @@ df3 = df[['pred2','pred4','pred6','pred8','pred10']].copy()
 df4 = df[['pred5','pred7','pred8']].copy()
 df5 = df[['pred1','pred2','pred6','pred8','pred10']].copy()
 
-test=df1
+test=df5
 comp=len(test.columns)
 y_pred=(test==1).astype(int).sum(axis=1)/comp > 0.5
 y_pred=y_pred.astype(int)
